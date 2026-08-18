@@ -1,17 +1,14 @@
-
 #include <stdio.h>
 
 int main() {
-    int a, b, sum = 0;
-    printf("Enter 2 variables: ");
-    scanf("%d %d", &a, &b);
-    sum = a + b;
-    a = sum -a;
-    b = sum - b;
+    int a = 10;
+    int b = 20;
 
-    printf("Swapped value a: %d and b: %d\n", a,b);
-  
     
+    a = a + b;
+    b = a - b; 
+    a = a - b; 
 
+    printf(" a = %d, b = %d\n", a, b);
     return 0;
 }
